@@ -32,9 +32,10 @@ try {
           nombre: user.name.first,
           apellido: user.name.last,
           genero: user.gender,
+          timestamp: user.registered.date
         };
         usuarios.push(usuario);
-        console.log((`id: ${uuidv4().slice(0, 6)} / ${user.name.title} ${user.name.first} ${user.name.last}`));
+        console.log((`id: ${uuidv4().slice(0, 6)} / ${user.name.title} ${user.name.first} ${user.name.last} / Fecha de Registro: ${user.registered.date} `));
       });
   
 
