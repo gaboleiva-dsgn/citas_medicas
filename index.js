@@ -39,6 +39,7 @@ app.get('/', async (req, res) => {
             };
             usuarios.push(usuario);
             console.log(chalk.bgWhite.blue(`id: ${uuidv4().slice(0, 6)} / ${user.name.title} ${user.name.first} ${user.name.last} / Fecha de Registro: ${usuario.timestamp} `));
+
         });
         // Por genero 
         usuarios = _.partition(usuarios, (usuario) => usuario.genero === 'male')
